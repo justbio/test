@@ -29,7 +29,7 @@ def senddata(access_token,party,content,agentid):
     print str(response)
 
 if __name__ == "__main__":
-    content = str(sys.argv[2])
+    content = str(sys.argv[3])
     agentid = "xxxx" #application agentid
     corpid = "xxxx" #corpid
     corpsecret = "xxxx" #corpsecret
