@@ -4,7 +4,7 @@ import urllib,urllib2
 import json
 import sys
 
-#default for zabbix2.x, or zabbix3.x witch set action's (to=$1,subject=$2,body=$3)
+#for zabbix3.x witch set action's (to=$1,body=$2)
 
 def gettoken(corpid,corpsecret):
     gettoken_url = "https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=" + corpid + "&corpsecret=" + corpsecret
