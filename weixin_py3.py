@@ -22,7 +22,6 @@ def gettoken(corpid,corpsecret):
 
 def senddata(access_token,party,content,agentid):
     send_url = "https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=" + access_token
-    #agentid
     send_values = {"touser":"","toparty":party,"msgtype":"text","agentid":agentid,"text":{"content":content },"safe":"0" }
     data = json.dumps(send_values, ensure_ascii=False)
     send_data=bytes(data,'utf8')
